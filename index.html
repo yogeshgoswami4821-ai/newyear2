@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>🎄 Merry Christmas 🎄</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="fireworks"></canvas>
+
+<header>🎄 Merry Christmas 🎄</header>
+
+<nav>
+  <button onclick="showSection('home')">Home</button>
+  <button onclick="showSection('wishes')">Wishes</button>
+  <button onclick="showSection('celebrate')">Celebrate</button>
+</nav>
+
+<section id="home" class="section active">
+  <div class="card">
+    <h2>Welcome to Christmas Wonderland ✨</h2>
+    <p>
+      Lights glow, hearts feel warm,  
+      and joy lives right here on this page.
+    </p>
+  </div>
+</section>
+
+<section id="wishes" class="section">
+  <div class="card">
+    <h2>🎅 Christmas Wishes 🎅</h2>
+    <p>
+      🌟 May happiness knock your door<br>
+      🌟 May peace stay forever<br>
+      🌟 May your life shine like Christmas lights
+    </p>
+  </div>
+</section>
+
+<section id="celebrate" class="section">
+  <div class="card">
+    <h2>🎆 Let’s Celebrate 🎆</h2>
+    <p>
+      Firecrackers paint the sky,  
+      joy dances everywhere.
+    </p>
+  </div>
+</section>
+
+<script>
+function showSection(id) {
+  document.querySelectorAll('.section').forEach(sec => {
+    sec.classList.remove('active');
+  });
+  document.getElementById(id).classList.add('active');
+}
+</script>
+
+<script src="fireworks.js"></script>
+</body>
+</html>
