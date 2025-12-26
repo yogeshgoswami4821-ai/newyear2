@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&family=Poppins&display=swap');
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  overflow-x: hidden;
+
+  background-image:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("images/bg1.jpg"),
+    url("images/bg2.jpg"),
+    url("images/bg3.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+header {
+  text-align: center;
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: 3rem;
+  padding: 30px;
+  color: #ffeb3b;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+nav button {
+  margin: 0 10px;
+  padding: 12px 26px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff1744, #ff9100);
+  color: white;
+  transition: transform 0.3s;
+}
+
+nav button:hover {
+  transform: scale(1.1);
+}
+
+.section {
+  display: none;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.section.active {
+  display: block;
+}
+
+.card {
+  max-width: 700px;
+  margin: auto;
+  padding: 35px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 30px rgba(255,215,0,0.5);
+}
